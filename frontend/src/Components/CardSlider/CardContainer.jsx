@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types';
 import CardCarousel from '../CardCarousel/CardCarousel';
-import { Eye } from 'lucide-react';
+import { Eye, ArrowRight } from 'lucide-react';
 import { useLang } from '../../context/LangContext';
 import useTextLangChange from '../../Constant/text.constant';
 
