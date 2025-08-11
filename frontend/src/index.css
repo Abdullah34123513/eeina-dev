@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+      Custom Font (Nirwana)
+*/
+@font-face {
+      font-family: 'Nirwana';
+      src: url('/fonts/NIRWANA-13.TTF') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+}
+
+
+
+/* 
+      Right-to-Left (RTL) Support
+*/
+[dir="rtl"] {
+      direction: rtl;
+}
+
+
+/* Hide Google Translate Banner and extra iframes */
+.goog-te-banner-frame.skiptranslate,
+.VIpgJd-ZVi9od-ORHb-OEVmcd,
+iframe.goog-te-banner-frame,
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf,
+.VIpgJd-yAWNEb-L7lbkb,
+.VIpgJd-ZVi9od-aZ2wEe-OiiCO {
+      display: none !important;
+}
+
+body {
+      top: 0 !important;
+}
+
+
+.custom-scroll{
+      /* For Webkit Browsers */
+      &::-webkit-scrollbar {
+            width: 8px;
+      }
+      &::-webkit-scrollbar-thumb {
+            background-color: #162033;
+            border-radius: 4px;
+      }
+
+      &::-webkit-scrollbar-track {
+            background-color: transparent;
+      }
+}

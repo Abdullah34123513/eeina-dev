@@ -1,0 +1,302 @@
+[
+      {
+            "user": {
+                  "id": "102eb17f37ebdb7454f93531b6910fea3b7",
+                  "firstName": "Boushra",
+                  "lastName": "Ali",
+                  "pictureUrl": "/creators/1.jpg",
+                  "relation": {
+                        "isFollowing": false,
+                        "isFollowedBy": false,
+                        "isMe": false
+                  },
+                  "username": "boushra_ali"
+            },
+            "description": "Mouthwatering Dinner & Dessert Recipes 💜"
+      },
+      {
+            "user": {
+                  "id": "10224cdcf21fc49431580076547168347eb",
+                  "firstName": "Cooking With",
+                  "lastName": "Shan Shan",
+                  "pictureUrl": "/creators/2.jpg",
+                  "relation": {
+                        "isFollowing": false,
+                        "isFollowedBy": false,
+                        "isMe": false
+                  },
+                  "username": "shanshan"
+            },
+            "description": "223K+ fans on TikTok| My culinary journey was influenced by family and nurtured in a Chinese village, where love for cooking with fresh, local ingredients took root. I'm dedicated to sharing my passion for authentic Chinese cuisine and more with you all."
+      },
+      {
+            "user": {
+                  "id": "1023bff4a6f1aba460698e33bb45027ce15",
+                  "firstName": "Danilo",
+                  "lastName": "Cortellini",
+                  "pictureUrl": "/creators/3.jpg",
+                  "relation": {
+                        "isFollowing": false,
+                        "isFollowedBy": false,
+                        "isMe": false
+                  },
+                  "username": "danilocortellini"
+            },
+            "description": "Michelin-trained chef & Pasta lover 🍝\n🎥 Content creator\n📚 Author & Event host\n🧑‍💻 Brand & hospitality consultant\n📧 info@danilocortellini.com"
+      },
+      {
+            "user": {
+                  "id": "102ce4f6c8038a7461b93667727c1440b8f",
+                  "firstName": "Angelo Coassin (Cooking with Bello)",
+                  "lastName": "🍝",
+                  "pictureUrl": "/creators/4.jpg",
+                  "relation": {
+                        "isFollowing": false,
+                        "isFollowedBy": false,
+                        "isMe": false
+                  },
+                  "username": "cookingwithbello"
+            },
+            "description": "Italian food is SEXY 🤤❤️🇮🇹"
+      },
+      {
+            "user": {
+                  "id": "102b46a39fa9760440eba694062d239e529",
+                  "firstName": "Julie",
+                  "lastName": "Tran Deily",
+                  "pictureUrl": "/creators/5.jpg",
+                  "relation": {
+                        "isFollowing": false,
+                        "isFollowedBy": false,
+                        "isMe": false
+                  },
+                  "username": "thelittlekitchn"
+            },
+            "description": "I share easy recipes for dinner and amazing desserts! I’m a former software engineer turned full time food blogger and content creator. You can find me @thelittlekitchn on other social channels!"
+      },
+      {
+            "user": {
+                  "id": "10202ae01de2d3647338c60c1fa965a1657",
+                  "firstName": "Eva",
+                  "lastName": "Koper",
+                  "pictureUrl": "/creators/6.jpg",
+                  "relation": {
+                        "isFollowing": false,
+                        "isFollowedBy": false,
+                        "isMe": false
+                  },
+                  "username": "eva.koper"
+            },
+            "description": "✨ start a balanced lifestyle with me \n👩🏼‍🍳 easy & nutritional recipes\n🌱 lactose-free (sometimes vegan)"
+      },
+      {
+            "user": {
+                  "id": "10211c08854518644b4a570575629563c47",
+                  "firstName": "KWOOWK",
+                  "pictureUrl": "/creators/7.jpg",
+                  "relation": {
+                        "isFollowing": false,
+                        "isFollowedBy": false,
+                        "isMe": false
+                  },
+                  "username": "kwoowk",
+                  "lastName": ""
+            },
+            "description": "Easy, healthy, cheap, tasty, other adjectives that will make you try these recipes"
+      },
+      {
+            "user": {
+                  "id": "10225720c1c36ea4fd7afd9bdea3fc42fae",
+                  "firstName": "Lacey (Lace Bakes)",
+                  "pictureUrl": "/creators/8.jpg",
+                  "relation": {
+                        "isFollowing": false,
+                        "isFollowedBy": false,
+                        "isMe": false
+                  },
+                  "username": "_lacebakes_",
+                  "lastName": ""
+            },
+            "description": "❤RECIPES FOR CARB LOVERS❤\n\nRecipes + tutorials that teach you how to make focaccia, pizza dough and more. Plus tons of inspiration on what to pair with your carby creations...\n\nJoin the Lace Bakes community to see all my recipes in one place!"
+      },
+      {
+            "user": {
+                  "id": "1021e3cfb5dca854d7ea22b140c7507a9fe",
+                  "firstName": "cooking with aulona",
+                  "pictureUrl": "/creators/9.jpg",
+                  "relation": {
+                        "isFollowing": false,
+                        "isFollowedBy": false,
+                        "isMe": false
+                  },
+                  "username": "the.sandwichmaker",
+                  "lastName": ""
+            },
+            "description": "Delicious food for everyone 🍝                                                 TikTok: cooking_with_aulona 3.3 M"
+      },
+      {
+            "user": {
+                  "id": "1023a30c4ec1c2640c09bf0bfa0fa273c40",
+                  "firstName": "sab",
+                  "pictureUrl": "/creators/10.jpg",
+                  "relation": {
+                        "isFollowing": false,
+                        "isFollowedBy": false,
+                        "isMe": false
+                  },
+                  "username": "sabsweets",
+                  "lastName": ""
+            },
+            "description": "just a curious baker ♡\n\nemail: saabsweets@gmail.com\nconnect with me: https://taplink.cc/sabsweets"
+      },
+      {
+            "user": {
+                  "id": "102eb17f37ebdb7454f93531b6910fea3b7",
+                  "firstName": "Boushra",
+                  "lastName": "Ali",
+                  "pictureUrl": "/creators/1.jpg",
+                  "relation": {
+                        "isFollowing": false,
+                        "isFollowedBy": false,
+                        "isMe": false
+                  },
+                  "username": "boushra_ali"
+            },
+            "description": "Mouthwatering Dinner & Dessert Recipes 💜"
+      },
+      {
+            "user": {
+                  "id": "10224cdcf21fc49431580076547168347eb",
+                  "firstName": "Cooking With",
+                  "lastName": "Shan Shan",
+                  "pictureUrl": "/creators/2.jpg",
+                  "relation": {
+                        "isFollowing": false,
+                        "isFollowedBy": false,
+                        "isMe": false
+                  },
+                  "username": "shanshan"
+            },
+            "description": "223K+ fans on TikTok| My culinary journey was influenced by family and nurtured in a Chinese village, where love for cooking with fresh, local ingredients took root. I'm dedicated to sharing my passion for authentic Chinese cuisine and more with you all."
+      },
+      {
+            "user": {
+                  "id": "1023bff4a6f1aba460698e33bb45027ce15",
+                  "firstName": "Danilo",
+                  "lastName": "Cortellini",
+                  "pictureUrl": "/creators/3.jpg",
+                  "relation": {
+                        "isFollowing": false,
+                        "isFollowedBy": false,
+                        "isMe": false
+                  },
+                  "username": "danilocortellini"
+            },
+            "description": "Michelin-trained chef & Pasta lover 🍝\n🎥 Content creator\n📚 Author & Event host\n🧑‍💻 Brand & hospitality consultant\n📧 info@danilocortellini.com"
+      },
+      {
+            "user": {
+                  "id": "102ce4f6c8038a7461b93667727c1440b8f",
+                  "firstName": "Angelo Coassin (Cooking with Bello)",
+                  "lastName": "🍝",
+                  "pictureUrl": "/creators/4.jpg",
+                  "relation": {
+                        "isFollowing": false,
+                        "isFollowedBy": false,
+                        "isMe": false
+                  },
+                  "username": "cookingwithbello"
+            },
+            "description": "Italian food is SEXY 🤤❤️🇮🇹"
+      },
+      {
+            "user": {
+                  "id": "102b46a39fa9760440eba694062d239e529",
+                  "firstName": "Julie",
+                  "lastName": "Tran Deily",
+                  "pictureUrl": "/creators/5.jpg",
+                  "relation": {
+                        "isFollowing": false,
+                        "isFollowedBy": false,
+                        "isMe": false
+                  },
+                  "username": "thelittlekitchn"
+            },
+            "description": "I share easy recipes for dinner and amazing desserts! I’m a former software engineer turned full time food blogger and content creator. You can find me @thelittlekitchn on other social channels!"
+      },
+      {
+            "user": {
+                  "id": "10202ae01de2d3647338c60c1fa965a1657",
+                  "firstName": "Eva",
+                  "lastName": "Koper",
+                  "pictureUrl": "/creators/6.jpg",
+                  "relation": {
+                        "isFollowing": false,
+                        "isFollowedBy": false,
+                        "isMe": false
+                  },
+                  "username": "eva.koper"
+            },
+            "description": "✨ start a balanced lifestyle with me \n👩🏼‍🍳 easy & nutritional recipes\n🌱 lactose-free (sometimes vegan)"
+      },
+      {
+            "user": {
+                  "id": "10211c08854518644b4a570575629563c47",
+                  "firstName": "KWOOWK",
+                  "pictureUrl": "/creators/7.jpg",
+                  "relation": {
+                        "isFollowing": false,
+                        "isFollowedBy": false,
+                        "isMe": false
+                  },
+                  "username": "kwoowk",
+                  "lastName": ""
+            },
+            "description": "Easy, healthy, cheap, tasty, other adjectives that will make you try these recipes"
+      },
+      {
+            "user": {
+                  "id": "10225720c1c36ea4fd7afd9bdea3fc42fae",
+                  "firstName": "Lacey (Lace Bakes)",
+                  "pictureUrl": "/creators/8.jpg",
+                  "relation": {
+                        "isFollowing": false,
+                        "isFollowedBy": false,
+                        "isMe": false
+                  },
+                  "username": "_lacebakes_",
+                  "lastName": ""
+            },
+            "description": "❤RECIPES FOR CARB LOVERS❤\n\nRecipes + tutorials that teach you how to make focaccia, pizza dough and more. Plus tons of inspiration on what to pair with your carby creations...\n\nJoin the Lace Bakes community to see all my recipes in one place!"
+      },
+      {
+            "user": {
+                  "id": "1021e3cfb5dca854d7ea22b140c7507a9fe",
+                  "firstName": "cooking with aulona",
+                  "pictureUrl": "/creators/9.jpg",
+                  "relation": {
+                        "isFollowing": false,
+                        "isFollowedBy": false,
+                        "isMe": false
+                  },
+                  "username": "the.sandwichmaker",
+                  "lastName": ""
+            },
+            "description": "Delicious food for everyone 🍝                                                 TikTok: cooking_with_aulona 3.3 M"
+      },
+      {
+            "user": {
+                  "id": "1023a30c4ec1c2640c09bf0bfa0fa273c40",
+                  "firstName": "sab",
+                  "pictureUrl": "/creators/10.jpg",
+                  "relation": {
+                        "isFollowing": false,
+                        "isFollowedBy": false,
+                        "isMe": false
+                  },
+                  "username": "sabsweets",
+                  "lastName": ""
+            },
+            "description": "just a curious baker ♡\n\nemail: saabsweets@gmail.com\nconnect with me: https://taplink.cc/sabsweets"
+      }
+]

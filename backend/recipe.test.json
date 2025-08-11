@@ -1,0 +1,1033 @@
+{
+      "id": "10160181d6e5bc6be2c10b569589753cd8a9dc9e865",
+      "name": "Air Fryer Mozzarella Sticks",
+      "description": "These homemade air fryer mozzarella sticks are awesome, so much better than the frozen store-bought kind. And they are super easy to make, perfect for game day, board game night, or other social gatherings.",
+      "ingredients": [
+            {
+                  "text": "8 string cheese sticks or Babybel cheese or whatever you like or a combination of a few kinds of cheese",
+                  "id": "0",
+                  "group": ""
+            },
+            {
+                  "text": "2 large eggs",
+                  "id": "1",
+                  "group": ""
+            },
+            {
+                  "text": "1/2 cup smashed Doritos (50g)",
+                  "id": "2",
+                  "group": ""
+            },
+            {
+                  "text": "1/2 cup panko breadcrumbs (50g)",
+                  "id": "3",
+                  "group": ""
+            },
+            {
+                  "text": "1/2 cup all-purpose flour (60g)",
+                  "id": "4",
+                  "group": ""
+            },
+            {
+                  "text": "1/2 tsp salt (2g)",
+                  "id": "5",
+                  "group": ""
+            },
+            {
+                  "text": "1/2 tsp garlic powder (2g)",
+                  "id": "6",
+                  "group": ""
+            },
+            {
+                  "text": "1/4 tsp black ground pepper (1g)",
+                  "id": "7",
+                  "group": ""
+            }
+      ],
+      "images": [
+            {
+                  "original": {
+                        "url": "https://www.inthekitchenwithmatt.com/wp-content/uploads/2021/07/Air-Fryer-Mozzarella-Sticks.jpeg"
+                  },
+                  "responsive": {
+                        "url": "https://cloudinary-cdn.whisk.com/image/upload/v1648944509/recipe/0475f374e6d65338047505752b537472.jpg",
+                        "width": 0,
+                        "height": 0
+                  }
+            }
+      ],
+      "source": {
+            "name": "inthekitchenwithmatt.com",
+            "displayName": "inthekitchenwithmatt.com",
+            "sourceRecipeUrl": "https://www.inthekitchenwithmatt.com/air-fryer-mozzarella-sticks?utm_source=whisk&utm_medium=webapp&utm_campaign=air_fryer_mozzarella_sticks",
+            "image": {
+                  "original": {
+                        "url": "https://www.inthekitchenwithmatt.com/wp-content/uploads/2021/08/cropped-In-the-Kitchen-with-Matt-Logo-Color-872x872-white-180x180.jpg"
+                  },
+                  "responsive": {
+                        "url": "https://cloudinary-cdn.whisk.com/image/upload/v1688184284/recipe/d1cfa26515afd8ca12fab8728f66d41d.jpg",
+                        "width": 0,
+                        "height": 0
+                  }
+            }
+      },
+      "servings": 8,
+      "durations": {
+            "cookTime": 7,
+            "prepTime": 15
+      },
+      "normalizedIngredients": [
+            {
+                  "id": "b809e9c435949df53434636dd5cbf161622a950d:0:0",
+                  "analysis": {
+                        "product": {
+                              "canonicalName": "STRING CHEESE",
+                              "originalName": "string cheese sticks"
+                        },
+                        "category": {
+                              "canonicalName": "DAIRY AND EGGS"
+                        },
+                        "quantity": 8,
+                        "comment": "or Babybel cheese or whatever you like or a combination of a few kinds of cheese",
+                        "imageUrl": "https://cloudinary-cdn.whisk.com/image/upload/v1550764598/graph/fooddb/441e64a934493e5c552f48ea46b0c433.jpg",
+                        "unit": "",
+                        "multiplier": 0,
+                        "alternativeAmounts": [],
+                        "alternativeMeasurements": []
+                  },
+                  "sourceText": "8 string cheese sticks or Babybel cheese or whatever you like or a combination of a few kinds of cheese",
+                  "rawId": "0",
+                  "group": ""
+            },
+            {
+                  "id": "3f9987d1d27076c34ed488a23c9b21b63cf4ca7d:1:0",
+                  "analysis": {
+                        "product": {
+                              "canonicalName": "EGG",
+                              "originalName": "eggs"
+                        },
+                        "category": {
+                              "canonicalName": "DAIRY AND EGGS"
+                        },
+                        "quantity": 2,
+                        "comment": "large",
+                        "imageUrl": "https://cloudinary-cdn.whisk.com/image/upload/v1550765018/graph/fooddb/fa43dd85a5a5b36d90db62044e58e857.jpg",
+                        "unit": "",
+                        "multiplier": 0,
+                        "alternativeAmounts": [],
+                        "alternativeMeasurements": []
+                  },
+                  "sourceText": "2 large eggs",
+                  "rawId": "1",
+                  "group": ""
+            },
+            {
+                  "id": "236b0a319b3617150f1c3c62d89d3d1b4fdc92e7:2:0",
+                  "analysis": {
+                        "product": {
+                              "canonicalName": "DORITO",
+                              "originalName": "Doritos"
+                        },
+                        "brand": {
+                              "canonicalName": "Doritos"
+                        },
+                        "category": {
+                              "canonicalName": "SNACKS"
+                        },
+                        "quantity": 0.5,
+                        "unit": "cup",
+                        "comment": "smashed",
+                        "imageUrl": "https://cloudinary-cdn.whisk.com/image/upload/v1550764569/graph/fooddb/6f7dc42a5c16f38ecadf32123290f2d3.jpg",
+                        "alternativeAmounts": [
+                              {
+                                    "quantity": 50,
+                                    "unit": "g",
+                                    "multiplier": 0
+                              }
+                        ],
+                        "alternativeMeasurements": [
+                              {
+                                    "measurementSystem": 1,
+                                    "amount": {
+                                          "quantity": 0.5,
+                                          "unit": "cup",
+                                          "multiplier": 0
+                                    }
+                              },
+                              {
+                                    "measurementSystem": 2,
+                                    "amount": {
+                                          "quantity": 0.5,
+                                          "unit": "cup",
+                                          "multiplier": 0
+                                    }
+                              }
+                        ],
+                        "multiplier": 0
+                  },
+                  "sourceText": "1/2 cup smashed Doritos (50g)",
+                  "rawId": "2",
+                  "group": ""
+            },
+            {
+                  "id": "307743fc045748567ecd8a648a94983c7ba8afdb:3:0",
+                  "analysis": {
+                        "product": {
+                              "canonicalName": "PANKO",
+                              "originalName": "panko breadcrumbs"
+                        },
+                        "category": {
+                              "canonicalName": "HERBS AND SPICES"
+                        },
+                        "quantity": 0.5,
+                        "unit": "cup",
+                        "imageUrl": "https://cloudinary-cdn.whisk.com/image/upload/v1550764917/graph/fooddb/19d81737bb3354e89d8272c970f9cb48.jpg",
+                        "alternativeAmounts": [
+                              {
+                                    "quantity": 50,
+                                    "unit": "g",
+                                    "multiplier": 0
+                              }
+                        ],
+                        "alternativeMeasurements": [
+                              {
+                                    "measurementSystem": 1,
+                                    "amount": {
+                                          "quantity": 0.5,
+                                          "unit": "cup",
+                                          "multiplier": 0
+                                    }
+                              },
+                              {
+                                    "measurementSystem": 2,
+                                    "amount": {
+                                          "quantity": 0.5,
+                                          "unit": "cup",
+                                          "multiplier": 0
+                                    }
+                              }
+                        ],
+                        "multiplier": 0,
+                        "comment": ""
+                  },
+                  "sourceText": "1/2 cup panko breadcrumbs (50g)",
+                  "rawId": "3",
+                  "group": ""
+            },
+            {
+                  "id": "d86dc026bfe71f89b4f6b385eb62df6a88bc9c00:4:0",
+                  "analysis": {
+                        "product": {
+                              "canonicalName": "ALL PURPOSE ENRICHED BLEACHED FLOUR",
+                              "originalName": "all-purpose flour"
+                        },
+                        "category": {
+                              "canonicalName": "BAKING"
+                        },
+                        "quantity": 0.5,
+                        "unit": "cup",
+                        "imageUrl": "https://cloudinary-cdn.whisk.com/image/upload/v1550763188/graph/fooddb/f9fbc23db97a0b2cbd8e99dff7f851f1.jpg",
+                        "alternativeAmounts": [
+                              {
+                                    "quantity": 60,
+                                    "unit": "g",
+                                    "multiplier": 0
+                              }
+                        ],
+                        "alternativeMeasurements": [
+                              {
+                                    "measurementSystem": 1,
+                                    "amount": {
+                                          "quantity": 0.5,
+                                          "unit": "cup",
+                                          "multiplier": 0
+                                    }
+                              },
+                              {
+                                    "measurementSystem": 2,
+                                    "amount": {
+                                          "quantity": 0.5,
+                                          "unit": "cup",
+                                          "multiplier": 0
+                                    }
+                              }
+                        ],
+                        "multiplier": 0,
+                        "comment": ""
+                  },
+                  "sourceText": "1/2 cup all-purpose flour (60g)",
+                  "rawId": "4",
+                  "group": ""
+            },
+            {
+                  "id": "43161c3bd07b1be3cd2ff3356492bee1a5b6a695:5:0",
+                  "analysis": {
+                        "product": {
+                              "canonicalName": "SALT",
+                              "originalName": "salt"
+                        },
+                        "category": {
+                              "canonicalName": "HERBS AND SPICES"
+                        },
+                        "quantity": 2,
+                        "unit": "g",
+                        "imageUrl": "https://cloudinary-cdn.whisk.com/image/upload/v1550765002/graph/fooddb/eb238db694872ac4ebb19f67029d0f81.jpg",
+                        "alternativeAmounts": [
+                              {
+                                    "quantity": 0.5,
+                                    "unit": "tsp",
+                                    "multiplier": 0
+                              }
+                        ],
+                        "alternativeMeasurements": [
+                              {
+                                    "measurementSystem": 1,
+                                    "amount": {
+                                          "quantity": 2,
+                                          "unit": "g",
+                                          "multiplier": 0
+                                    }
+                              },
+                              {
+                                    "measurementSystem": 2,
+                                    "amount": {
+                                          "quantity": 2,
+                                          "unit": "g",
+                                          "multiplier": 0
+                                    }
+                              }
+                        ],
+                        "multiplier": 0,
+                        "comment": ""
+                  },
+                  "sourceText": "1/2 tsp salt (2g)",
+                  "rawId": "5",
+                  "group": ""
+            },
+            {
+                  "id": "2a3ffb45a8f2d0bb129764a62edf8b5fea69bdd7:6:0",
+                  "analysis": {
+                        "product": {
+                              "canonicalName": "GARLIC POWDER",
+                              "originalName": "garlic powder"
+                        },
+                        "category": {
+                              "canonicalName": "HERBS AND SPICES"
+                        },
+                        "quantity": 2,
+                        "unit": "g",
+                        "imageUrl": "https://cloudinary-cdn.whisk.com/image/upload/v1550765037/graph/fooddb/7a4c00c9275be9d151cdc54c9c2e1066.jpg",
+                        "alternativeAmounts": [
+                              {
+                                    "quantity": 0.5,
+                                    "unit": "tsp",
+                                    "multiplier": 0
+                              }
+                        ],
+                        "alternativeMeasurements": [
+                              {
+                                    "measurementSystem": 1,
+                                    "amount": {
+                                          "quantity": 2,
+                                          "unit": "g",
+                                          "multiplier": 0
+                                    }
+                              },
+                              {
+                                    "measurementSystem": 2,
+                                    "amount": {
+                                          "quantity": 2,
+                                          "unit": "g",
+                                          "multiplier": 0
+                                    }
+                              }
+                        ],
+                        "multiplier": 0,
+                        "comment": ""
+                  },
+                  "sourceText": "1/2 tsp garlic powder (2g)",
+                  "rawId": "6",
+                  "group": ""
+            },
+            {
+                  "id": "641620cae473008c948159272d14d7df3d2f4ed5:7:0",
+                  "analysis": {
+                        "product": {
+                              "canonicalName": "GROUND BLACK PEPPER",
+                              "originalName": "black ground pepper"
+                        },
+                        "category": {
+                              "canonicalName": "HERBS AND SPICES"
+                        },
+                        "quantity": 1,
+                        "unit": "g",
+                        "imageUrl": "https://cloudinary-cdn.whisk.com/image/upload/v1552312223/custom_upload/cc182df056b10172b107dc9d85f592a2.jpg",
+                        "alternativeAmounts": [
+                              {
+                                    "quantity": 0.25,
+                                    "unit": "tsp",
+                                    "multiplier": 0
+                              }
+                        ],
+                        "alternativeMeasurements": [
+                              {
+                                    "measurementSystem": 1,
+                                    "amount": {
+                                          "quantity": 1,
+                                          "unit": "g",
+                                          "multiplier": 0
+                                    }
+                              },
+                              {
+                                    "measurementSystem": 2,
+                                    "amount": {
+                                          "quantity": 1,
+                                          "unit": "g",
+                                          "multiplier": 0
+                                    }
+                              }
+                        ],
+                        "multiplier": 0,
+                        "comment": ""
+                  },
+                  "sourceText": "1/4 tsp black ground pepper (1g)",
+                  "rawId": "7",
+                  "group": ""
+            }
+      ],
+      "nutrition": {
+            "status": 1,
+            "components": [
+                  {
+                        "code": {
+                              "name": "FAT",
+                              "displayName": "Total Fat"
+                        },
+                        "value": 55.508,
+                        "unit": {
+                              "name": "G",
+                              "displayName": "g"
+                        }
+                  },
+                  {
+                        "code": {
+                              "name": "NIA",
+                              "displayName": "Niacin B3"
+                        },
+                        "value": 4.362,
+                        "unit": {
+                              "name": "Mg",
+                              "displayName": "mg"
+                        }
+                  },
+                  {
+                        "code": {
+                              "name": "ACAROTENE",
+                              "displayName": "Alpha Carotene"
+                        },
+                        "value": 0.12,
+                        "unit": {
+                              "name": "Mkg",
+                              "displayName": "mcg"
+                        }
+                  },
+                  {
+                        "code": {
+                              "name": "FATRN",
+                              "displayName": "Trans Fat"
+                        },
+                        "value": 0.04,
+                        "unit": {
+                              "name": "G",
+                              "displayName": "g"
+                        }
+                  },
+                  {
+                        "code": {
+                              "name": "TOCPHA",
+                              "displayName": "Vitamin E"
+                        },
+                        "value": 1.11,
+                        "unit": {
+                              "name": "Mg",
+                              "displayName": "mg"
+                        }
+                  },
+                  {
+                        "code": {
+                              "name": "THIA",
+                              "displayName": "Thiamin B1"
+                        },
+                        "value": 0.524,
+                        "unit": {
+                              "name": "Mg",
+                              "displayName": "mg"
+                        }
+                  },
+                  {
+                        "code": {
+                              "name": "VITB12",
+                              "displayName": "Vitamin B12"
+                        },
+                        "value": 0.89,
+                        "unit": {
+                              "name": "Mkg",
+                              "displayName": "mcg"
+                        }
+                  },
+                  {
+                        "code": {
+                              "name": "FAPU",
+                              "displayName": "Polyunsaturated Fat"
+                        },
+                        "value": 2.17,
+                        "unit": {
+                              "name": "G",
+                              "displayName": "g"
+                        }
+                  },
+                  {
+                        "code": {
+                              "name": "ENERC_KCAL",
+                              "displayName": "Energy"
+                        },
+                        "value": 1325.436,
+                        "unit": {
+                              "name": "Kcal",
+                              "displayName": "kcal"
+                        }
+                  },
+                  {
+                        "code": {
+                              "name": "DHA",
+                              "displayName": "Omega 3 DHA"
+                        },
+                        "value": 60,
+                        "unit": {
+                              "name": "Mg",
+                              "displayName": "mg"
+                        }
+                  },
+                  {
+                        "code": {
+                              "name": "CHOCDF",
+                              "displayName": "Carbohydrate Total"
+                        },
+                        "value": 123.029,
+                        "unit": {
+                              "name": "G",
+                              "displayName": "g"
+                        }
+                  },
+                  {
+                        "code": {
+                              "name": "FASAT",
+                              "displayName": "Saturated Fat"
+                        },
+                        "value": 24.736,
+                        "unit": {
+                              "name": "G",
+                              "displayName": "g"
+                        }
+                  },
+                  {
+                        "code": {
+                              "name": "P",
+                              "displayName": "Phosphorus"
+                        },
+                        "value": 379.66,
+                        "unit": {
+                              "name": "Mg",
+                              "displayName": "mg"
+                        }
+                  },
+                  {
+                        "code": {
+                              "name": "MG",
+                              "displayName": "Magnesium"
+                        },
+                        "value": 28.47,
+                        "unit": {
+                              "name": "Mg",
+                              "displayName": "mg"
+                        }
+                  },
+                  {
+                        "code": {
+                              "name": "CA",
+                              "displayName": "Calcium"
+                        },
+                        "value": 1456.75,
+                        "unit": {
+                              "name": "Mg",
+                              "displayName": "mg"
+                        }
+                  },
+                  {
+                        "code": {
+                              "name": "VITK1",
+                              "displayName": "Vitamin K"
+                        },
+                        "value": 2.125,
+                        "unit": {
+                              "name": "Mkg",
+                              "displayName": "mcg"
+                        }
+                  },
+                  {
+                        "code": {
+                              "name": "SUGAR",
+                              "displayName": "Sugars"
+                        },
+                        "value": 2.372,
+                        "unit": {
+                              "name": "G",
+                              "displayName": "g"
+                        }
+                  },
+                  {
+                        "code": {
+                              "name": "PROCNT",
+                              "displayName": "Protein"
+                        },
+                        "value": 80.687,
+                        "unit": {
+                              "name": "G",
+                              "displayName": "g"
+                        }
+                  },
+                  {
+                        "code": {
+                              "name": "VITC",
+                              "displayName": "Vitamin C"
+                        },
+                        "value": 2.174,
+                        "unit": {
+                              "name": "Mg",
+                              "displayName": "mg"
+                        }
+                  },
+                  {
+                        "code": {
+                              "name": "NA",
+                              "displayName": "Sodium"
+                        },
+                        "value": 2537.52,
+                        "unit": {
+                              "name": "Mg",
+                              "displayName": "mg"
+                        }
+                  },
+                  {
+                        "code": {
+                              "name": "TRP",
+                              "displayName": "Tryptophan"
+                        },
+                        "value": 246.78,
+                        "unit": {
+                              "name": "Mg",
+                              "displayName": "mg"
+                        }
+                  },
+                  {
+                        "code": {
+                              "name": "Zn",
+                              "displayName": "Zinc"
+                        },
+                        "value": 1.784,
+                        "unit": {
+                              "name": "Mg",
+                              "displayName": "mg"
+                        }
+                  },
+                  {
+                        "code": {
+                              "name": "Fe",
+                              "displayName": "Iron"
+                        },
+                        "value": 5.396,
+                        "unit": {
+                              "name": "Mg",
+                              "displayName": "mg"
+                        }
+                  },
+                  {
+                        "code": {
+                              "name": "VITB6A",
+                              "displayName": "Vitamin B6"
+                        },
+                        "value": 0.375,
+                        "unit": {
+                              "name": "Mg",
+                              "displayName": "mg"
+                        }
+                  },
+                  {
+                        "code": {
+                              "name": "VITD",
+                              "displayName": "Vitamin D"
+                        },
+                        "value": 2,
+                        "unit": {
+                              "name": "Mkg",
+                              "displayName": "mcg"
+                        }
+                  },
+                  {
+                        "code": {
+                              "name": "FIBTG",
+                              "displayName": "Fiber"
+                        },
+                        "value": 5.653,
+                        "unit": {
+                              "name": "G",
+                              "displayName": "g"
+                        }
+                  },
+                  {
+                        "code": {
+                              "name": "VITA_RAE",
+                              "displayName": "Vitamin A"
+                        },
+                        "value": 557.769,
+                        "unit": {
+                              "name": "Mkg",
+                              "displayName": "mcg"
+                        }
+                  },
+                  {
+                        "code": {
+                              "name": "RIBF",
+                              "displayName": "Riboflavin B2"
+                        },
+                        "value": 0.759,
+                        "unit": {
+                              "name": "Mg",
+                              "displayName": "mg"
+                        }
+                  },
+                  {
+                        "code": {
+                              "name": "FAMS",
+                              "displayName": "Monounsaturated Fat"
+                        },
+                        "value": 3.724,
+                        "unit": {
+                              "name": "G",
+                              "displayName": "g"
+                        }
+                  },
+                  {
+                        "code": {
+                              "name": "BCAROTENE",
+                              "displayName": "Beta Carotene"
+                        },
+                        "value": 3.1,
+                        "unit": {
+                              "name": "Mkg",
+                              "displayName": "mcg"
+                        }
+                  },
+                  {
+                        "code": {
+                              "name": "FOL",
+                              "displayName": "Folic Acid B9"
+                        },
+                        "value": 222.71,
+                        "unit": {
+                              "name": "Mkg",
+                              "displayName": "mcg"
+                        }
+                  },
+                  {
+                        "code": {
+                              "name": "K",
+                              "displayName": "Potassium"
+                        },
+                        "value": 293.01,
+                        "unit": {
+                              "name": "Mg",
+                              "displayName": "mg"
+                        }
+                  },
+                  {
+                        "code": {
+                              "name": "CHOLE",
+                              "displayName": "Cholesterol"
+                        },
+                        "value": 471.36,
+                        "unit": {
+                              "name": "Mg",
+                              "displayName": "mg"
+                        }
+                  }
+            ],
+            "healthScore": {
+                  "value": 5.111,
+                  "nutrientsInfluence": [
+                        {
+                              "code": {
+                                    "name": "FAT_UNSAT",
+                                    "displayName": "Unsaturated Fat"
+                              },
+                              "influence": 0.132,
+                              "comment": "Insignificant impact"
+                        },
+                        {
+                              "code": {
+                                    "name": "FATRN",
+                                    "displayName": "Trans Fat"
+                              },
+                              "influence": -0.015,
+                              "comment": "Insignificant impact"
+                        },
+                        {
+                              "code": {
+                                    "name": "CHOCDF",
+                                    "displayName": "Carbohydrate Total"
+                              },
+                              "influence": -0.38,
+                              "comment": "Low negative impact"
+                        },
+                        {
+                              "code": {
+                                    "name": "FASAT",
+                                    "displayName": "Saturated Fat"
+                              },
+                              "influence": -0.326,
+                              "comment": "Low negative impact"
+                        },
+                        {
+                              "code": {
+                                    "name": "MG",
+                                    "displayName": "Magnesium"
+                              },
+                              "influence": 0.098,
+                              "comment": "Insignificant impact"
+                        },
+                        {
+                              "code": {
+                                    "name": "CA",
+                                    "displayName": "Calcium"
+                              },
+                              "influence": 0.905,
+                              "comment": "Strong positive impact"
+                        },
+                        {
+                              "code": {
+                                    "name": "SUGAR",
+                                    "displayName": "Sugars"
+                              },
+                              "influence": -0.009,
+                              "comment": "Insignificant impact"
+                        },
+                        {
+                              "code": {
+                                    "name": "PROCNT",
+                                    "displayName": "Protein"
+                              },
+                              "influence": 0.701,
+                              "comment": "Medium positive impact"
+                        },
+                        {
+                              "code": {
+                                    "name": "VITC",
+                                    "displayName": "Vitamin C"
+                              },
+                              "influence": 0.015,
+                              "comment": "Insignificant impact"
+                        },
+                        {
+                              "code": {
+                                    "name": "NA",
+                                    "displayName": "Sodium"
+                              },
+                              "influence": -0.482,
+                              "comment": "Medium negative impact"
+                        },
+                        {
+                              "code": {
+                                    "name": "Fe",
+                                    "displayName": "Iron"
+                              },
+                              "influence": 0.321,
+                              "comment": "Low positive impact"
+                        },
+                        {
+                              "code": {
+                                    "name": "FIBTG",
+                                    "displayName": "Fiber"
+                              },
+                              "influence": 0.174,
+                              "comment": "Low positive impact"
+                        },
+                        {
+                              "code": {
+                                    "name": "VITA_RAE",
+                                    "displayName": "Vitamin A"
+                              },
+                              "influence": 0.175,
+                              "comment": "Low positive impact"
+                        },
+                        {
+                              "code": {
+                                    "name": "K",
+                                    "displayName": "Potassium"
+                              },
+                              "influence": 0.066,
+                              "comment": "Insignificant impact"
+                        },
+                        {
+                              "code": {
+                                    "name": "CHOLE",
+                                    "displayName": "Cholesterol"
+                              },
+                              "influence": -0.492,
+                              "comment": "Medium negative impact"
+                        }
+                  ]
+            },
+            "glycemicIndex": {
+                  "value": 67.21
+            },
+            "glycemicLoad": {
+                  "value": 10.34
+            }
+      },
+      "language": "en",
+      "user": {
+            "type": 2,
+            "collections": [],
+            "value": false,
+            "owner": false
+      },
+      "contentPolicyViolation": {
+            "textStatus": 1,
+            "imageStatus": 1,
+            "ingredientsStatus": 1,
+            "violated": false
+      },
+      "saveCount": 16,
+      "communitySharing": {
+            "status": {
+                  "oneof": "availableEverywhere",
+                  "value": {}
+            }
+      },
+      "reviews": {
+            "willBeResetAfterEdit": true,
+            "rating": {
+                  "dislikeCount": 2,
+                  "score": 100,
+                  "aggregatedRating": {
+                        "liked": false
+                  },
+                  "likeCount": 0
+            },
+            "tags": {
+                  "tags": [
+                        {
+                              "name": "bland",
+                              "displayName": "Bland"
+                        },
+                        {
+                              "name": "never-again",
+                              "displayName": "Never again"
+                        }
+                  ]
+            },
+            "filledReviews": {
+                  "reviews": [],
+                  "totalCount": 0
+            }
+      },
+      "labels": {
+            "mealType": [
+                  {
+                        "name": "appetizers",
+                        "displayName": "Appetizers"
+                  },
+                  {
+                        "name": "side-dishes",
+                        "displayName": "Side Dishes"
+                  },
+                  {
+                        "name": "snacks",
+                        "displayName": "Snacks"
+                  }
+            ],
+            "cuisine": [
+                  {
+                        "name": "american",
+                        "displayName": "American"
+                  }
+            ],
+            "category": [
+                  {
+                        "name": "appetizers-and-snacks",
+                        "displayName": "Appetizers And Snacks"
+                  },
+                  {
+                        "name": "side-dishes",
+                        "displayName": "Side Dishes"
+                  }
+            ],
+            "technique": [
+                  {
+                        "name": "whisking",
+                        "displayName": "Whisking"
+                  },
+                  {
+                        "name": "freezing",
+                        "displayName": "Freezing"
+                  }
+            ],
+            "holiday": [],
+            "seasonality": [],
+            "device": []
+      },
+      "publicity": {
+            "sampleCommunity": {
+                  "id": "aa68f106b4714cae895b9445789dcad1",
+                  "name": "Best Air Fryer Recipes"
+            },
+            "publicCommunityCount": 4,
+            "isPublic": false,
+            "privateCommunityCount": 0
+      },
+      "recipeAuthor": {
+            "author": {
+                  "oneof": "publisher",
+                  "value": {
+                        "name": "inthekitchenwithmatt.com",
+                        "displayName": "inthekitchenwithmatt.com",
+                        "sourceRecipeUrl": "https://www.inthekitchenwithmatt.com/air-fryer-mozzarella-sticks?utm_source=whisk&utm_medium=webapp&utm_campaign=air_fryer_mozzarella_sticks",
+                        "imageUrl": "https://cloudinary-cdn.whisk.com/image/upload/v1688184284/recipe/d1cfa26515afd8ca12fab8728f66d41d.jpg"
+                  }
+            }
+      },
+      "updatedAt": 1740213760433,
+      "permissions": {
+            "canBeOpenedInIframe": true,
+            "isInstructionsEnabled": false,
+            "isGuidedCookingEnabled": false,
+            "canEditSource": false,
+            "canEditRecipe": false,
+            "isSmartGuidedCookingEnabled": false
+      },
+      "videos": [
+            {
+                  "video": {
+                        "oneof": "youtubeVideo",
+                        "value": {
+                              "originalLink": "https://www.youtube.com/watch?v=PX7HRpQd-zg",
+                              "normalizedLink": "https://www.youtube.com/embed/PX7HRpQd-zg?feature=oembed",
+                              "videoId": "PX7HRpQd-zg?feature=oembed"
+                        }
+                  }
+            }
+      ],
+      "servingsScaled": 0,
+      "isFlagged": false,
+      "promotedIngredients": []
+}

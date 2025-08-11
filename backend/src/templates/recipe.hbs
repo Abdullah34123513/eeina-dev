@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="{{lang}}" dir="{{#if (eq lang 'ar')}}rtl{{else}}ltr{{/if}}">
+<head>
+  <meta charset="UTF-8">
+  <title>{{lookup recipe.title lang}}</title>
+  <style>
+    @page { size: A4; margin: 60px 40px; }
+    body {
+      margin: 0; padding: 0; color: #333;
+      direction: {{#if (eq lang 'ar')}}rtl{{else}}ltr{{/if}};
+      text-align: {{#if (eq lang 'ar')}}right{{else}}left{{/if}};
+      font-family: {{#if (eq lang 'ar')}}'Cairo', sans-serif{{else}}'Helvetica Neue', Helvetica, Arial, sans-serif{{/if}};
+    }
+    .container {
+      padding: 40px;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      background: #fff;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+      padding: 20px;
+      background: #f7f7f7;
+      border-radius: 8px;
+    }
+    .header img {
+      max-width: 150px;
+      border-radius: 8px;
+      margin-bottom: 16px;
+    }
+    .header h1 {
+      font-size: 32px;
+      margin: 0;
+      color: #2d3436;
+    }
+    .metadata {
+      font-size: 14px;
+      color: #555;
+      margin-top: 8px;
+    }
+    .metadata span {
+      margin-{{#if (eq lang 'ar')}}left{{else}}right{{/if}}: 16px;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .section h2 {
+      font-size: 24px;
+      color: #2d3436;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+    }
+    .description p {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .ingredients ul {
+      list-style: none;
+      padding: 0;
+    }
+    .ingredients li {
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+    .nutrition table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+    }
+    .nutrition th, .nutrition td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    .nutrition th {
+      background: #f0f0f0;
+      text-align: {{#if (eq lang 'ar')}}right{{else}}left{{/if}};
+    }
+    .labels span {
+      display: inline-block;
+      background: #e8f0fe;
+      color: #1967d2;
+      border-radius: 4px;
+      padding: 4px 8px;
+      margin: 4px;
+      font-size: 12px;
+    }
+
+    /* Improved Instructions */
+    .instructions ol {
+      padding-left: 20px;
+    }
+    .instructions li {
+      margin-bottom: 20px;
+      padding-left: 10px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .signature {
+      text-align: center;
+      font-size: 12px;
+      color: #999;
+      margin-top: 40px;
+    }
+  </style>
+  {{#if (eq lang 'ar')}}<link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet"/>{{/if}}
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      {{#if recipe.thumbnail.url}}
+        <img src="{{recipe.thumbnail.url}}" alt="Recipe Image"/>
+      {{/if}}
+      <h1>{{lookup recipe.title lang}}</h1>
+      <div class="metadata">
+        {{#if recipe.servings}}<span>{{t "servings" lang}}: {{recipe.servings}}</span>{{/if}}
+        {{#if recipe.time}}<span>{{t "time" lang}}: {{recipe.time}} {{t "minutes" lang}}</span>{{/if}}
+      </div>
+    </div>
+
+    {{#if (lookup recipe.description lang)}}
+      <div class="section description">
+        <h2>{{t "description" lang}}</h2>
+        <p>{{lookup recipe.description lang}}</p>
+      </div>
+    {{/if}}
+
+    {{#if recipe.ingredients}}
+      <div class="section ingredients">
+        <h2>{{t "ingredients" lang}}</h2>
+        <ul>
+          {{#each recipe.ingredients}}
+            <li>
+              {{lookup this.ingrText ../lang}}
+              {{#if this.amount}} — {{this.amount}} {{lookup this.unit ../lang}}{{/if}}
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+    {{/if}}
+
+    {{#if recipe.nutrition.nutrients}}
+      <div class="section nutrition">
+        <h2>{{t "nutrition" lang}}</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>{{t "nutrition" lang}}</th>
+              <th>Amount</th>
+              <th>%</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each recipe.nutrition.nutrients}}
+              <tr>
+                <td>{{lookup this.name ../lang}}</td>
+                <td>{{this.amount}} {{lookup this.unit ../lang}}</td>
+                <td>{{this.percentOfDailyNeeds}}%</td>
+              </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+    {{/if}}
+
+    {{#if recipe.category}}
+      <div class="section labels">
+        <h2>{{t "category" lang}}</h2>
+        {{#each recipe.category}}<span>{{lookup this ../lang}}</span>{{/each}}
+      </div>
+    {{/if}}
+
+    {{#if recipe.healthLabels}}
+      <div class="section labels">
+        <h2>{{t "healthLabels" lang}}</h2>
+        {{#each recipe.healthLabels}}<span>{{lookup this ../lang}}</span>{{/each}}
+      </div>
+    {{/if}}
+
+    {{#if recipe.dietLabels}}
+      <div class="section labels">
+        <h2>{{t "dietLabels" lang}}</h2>
+        {{#each recipe.dietLabels}}<span>{{lookup this ../lang}}</span>{{/each}}
+      </div>
+    {{/if}}
+
+    {{#if recipe.instructions.length}}
+      <div class="section instructions">
+        <h2>{{t "instructions" lang}}</h2>
+        <ol>
+          {{#each recipe.instructions}}
+            <li>
+              {{lookup this.step ../lang}}
+            </li>
+          {{/each}}
+        </ol>
+      </div>
+    {{/if}}
+
+    <div class="signature">{{t "generatedBy" lang}}</div>
+  </div>
+</body>
+</html>

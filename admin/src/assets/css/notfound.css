@@ -1,0 +1,24 @@
+.not-found-container {
+    text-align: center;
+    margin-top: 5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.not-found-container h1 {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+}
+
+.button-group {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.button-group button {
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+}

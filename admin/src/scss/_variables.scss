@@ -1,0 +1,27 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+// Color Variables
+$primary-deep: #303f9f;
+$primary: #3f51b5;
+$light-font: #464646;
+$sidebar-hover: #f7f7f7;
+$sidebar-icon-bg: #607d8b;
+$dashboard-bg: #efefef;
+$green: #4caf50;
+$skyblue: #2196f3;
+$red: #e91e63;
+$btn-primary-hover: #32408f;
+$btn-primary-border: #3e4fb1;
+$btn-success-border: #4aab4e;
+$btn-success-hover: #3d8b40;
+$form-focus-border: #1976d2;
+$invoice-header-bg: #a2a2a2;
+$input-group-bg: #eee;
+
+// Bootstrap Overrides
+$body-bg: $dashboard-bg;
+$font-family-base: 'Roboto', sans-serif;
+$font-size-base: 14px;
+$btn-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);

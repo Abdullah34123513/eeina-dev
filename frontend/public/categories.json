@@ -1,0 +1,68 @@
+[
+      {
+            "id": "shrimp",
+            "title": "Shrimp",
+            "titleColor": "#233748",
+            "imageUrl": "/Cate/1.png"
+      },
+      {
+            "id": "under_1_hour",
+            "title": "Under 1 hour",
+            "titleColor": "#233748",
+            "imageUrl": "/Cate/2.png"
+      },
+      {
+            "id": "vegan",
+            "title": "Vegan",
+            "titleColor": "#233748",
+            "imageUrl": "/Cate/3.png"
+      },
+      {
+            "id": "ground_beef",
+            "title": "Ground Beef",
+            "titleColor": "#FFFFFF",
+            "imageUrl": "/Cate/4.png"
+      },
+      {
+            "id": "healthy",
+            "title": "Healthy",
+            "titleColor": "#233748",
+            "imageUrl": "/Cate/5.png"
+      },
+      {
+            "id": "vegetarian",
+            "title": "Vegetarian",
+            "titleColor": "#233748",
+            "imageUrl": "/Cate/6.png"
+      },
+      {
+            "id": "5_ingredients_and_less",
+            "title": "5 ingredients and less",
+            "titleColor": "#FFFFFF",
+            "imageUrl": "/Cate/7.png"
+      },
+      {
+            "id": "guided",
+            "title": "Guided",
+            "titleColor": "#233748",
+            "imageUrl": "/Cate/8.png"
+      },
+      {
+            "id": "salmon",
+            "title": "Salmon",
+            "titleColor": "#FFFFFF",
+            "imageUrl": "/Cate/9.png"
+      },
+      {
+            "id": "10_ingredients_and_less",
+            "title": "10 ingredients and less",
+            "titleColor": "#233748",
+            "imageUrl": "/Cate/10.png"
+      },
+      {
+            "id": "fish",
+            "title": "Fish",
+            "titleColor": "#233748",
+            "imageUrl": "/Cate/11.png"
+      }
+]
