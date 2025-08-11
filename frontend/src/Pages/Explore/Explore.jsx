@@ -59,7 +59,7 @@ const Explore = () => {
 
 
       return (
-            <div>
+            <div className="space-y-16">
                   <CardContainer
                         title={exploreCateTitle}
                         subtitle={exploreCateSub}

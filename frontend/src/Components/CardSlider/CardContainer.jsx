@@ -19,45 +19,45 @@ const CardContainer = ({
       const { viewAllBtn } = useTextLangChange()
 
       return (
-            <div className='lg:pb-12 mb-6 lg:mb-10'>
-                  <div className="text-center mb-6">
-                        <h2 className="text-3xl font-bold mb-2" dir={isArabic ? 'rtl' : 'ltr'}>
-                              <span className="text-black">
+            <div className='section-padding'>
+                  <div className="text-center mb-12">
+                        <h2 className="text-4xl lg:text-5xl font-bold mb-4 font-display" dir={isArabic ? 'rtl' : 'ltr'}>
+                              <span className="text-neutral-800">
                                     {title?.split(" ")[0]}
                               </span>{" "}
-                              <span className="text-primary">
+                              <span className="gradient-text">
                                     {title?.split(" ")[1]}
                               </span>
                         </h2>
 
                         <p
-                              className="font-oswald font-normal"
+                              className="text-lg text-neutral-600 max-w-2xl mx-auto leading-relaxed"
                               dir={isArabic ? 'rtl' : 'ltr'}
                         >
                               {subtitle}
                         </p>
                   </div>
+                  
                   <CardCarousel
                         categories={carouselData}
                         profileData={profileData}
                         isProfile={isProfile}
                         route={route}
                   />
+                  
                   <div
-                        className=' flex justify-center items-center my-5'
+                        className='flex justify-center items-center mt-12'
                   >
                         <Link
                               to={btnRoute}
-                              className='h-full bg-btnSecondary rounded-full text-white px-4 py-2 uppercase text-sm flex items-center space-x-2'
+                              className='btn-secondary text-base flex items-center space-x-3 group'
                               dir={isArabic ? 'rtl' : 'ltr'}
                         >
-                              <Eye className='' size={22} />
-                              <span
-                                    className='w-[2px] h-5 bg-white  inline-block'
-                              />
+                              <Eye className='group-hover:scale-110 transition-transform' size={20} />
                               <span>
                                     {viewAllBtn}
                               </span>
+                              <ArrowRight className='w-4 h-4 group-hover:translate-x-1 transition-transform' />
                         </Link>
                   </div>
             </div>

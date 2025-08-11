@@ -65,40 +65,41 @@ const RecipeCard = ({ recipe }) => {
       return (
             <>
                   <Link to={`/recipe/${recipe._id}`} className="group block">
-                        <div className="relative bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-100">
+                        <div className="relative card card-hover overflow-hidden group-hover:shadow-glow group-hover:border-primary-200">
                               {/* Image container */}
-                              <div className="relative h-52 w-full overflow-hidden">
+                              <div className="relative h-56 w-full overflow-hidden">
                                     <img
                                           src={recipe?.thumbnail?.url}
                                           alt="Recipe"
-                                          className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-300"
+                                          className="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-700"
                                     />
 
-                                    {/* Primary color overlay */}
-                                    <div className="absolute inset-0 bg-[#018558]/10 group-hover:bg-[#018558]/15 transition-colors duration-300" />
+                                    {/* Enhanced overlay */}
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+                                    <div className="absolute inset-0 bg-gradient-to-br from-primary-500/20 to-accent-500/20 group-hover:from-primary-500/30 group-hover:to-accent-500/30 transition-all duration-300" />
 
                                     {/* Play Icon */}
                                     {recipe?.videoUrl && (
-                                          <div className="absolute inset-0 flex items-center justify-center z-10">
+                                          <div className="absolute inset-0 flex items-center justify-center z-20">
                                                 <CirclePlay
-                                                      size={50}
-                                                      className="text-white/90 drop-shadow-lg group-hover:text-white group-hover:scale-110 transition-all duration-300"
+                                                      size={60}
+                                                      className="text-white drop-shadow-2xl group-hover:scale-125 transition-all duration-300 animate-pulse-slow"
                                                 />
                                           </div>
                                     )}
 
                                     {/* Top-right Icons */}
-                                    <div className="absolute top-3 right-3 flex gap-2 z-10">
+                                    <div className="absolute top-4 right-4 flex gap-3 z-20">
                                           <button
                                                 onClick={(e) => {
                                                       e.preventDefault();
                                                       e.stopPropagation();
                                                       handleRecipeLike();
                                                 }}
-                                                className="p-2 bg-white/90 backdrop-blur-sm rounded-full shadow-sm hover:bg-white transition-colors duration-200"
+                                                className="p-3 bg-white/90 backdrop-blur-md rounded-2xl shadow-soft hover:bg-white hover:scale-110 transition-all duration-300"
                                           >
                                                 <Heart
-                                                      className={`w-5 h-5 ${isLiked ? "text-red-500" : "text-[#018558]"}`}
+                                                      className={`w-5 h-5 ${isLiked ? "text-error" : "text-primary-600"}`}
                                                       fill={
                                                             isLiked
                                                                   ? "currentColor"
@@ -109,44 +110,49 @@ const RecipeCard = ({ recipe }) => {
                                           </button>
 
                                           <button
-                                                className="p-2 bg-white/90 backdrop-blur-sm rounded-full shadow-sm hover:bg-white transition-colors duration-200"
+                                                className="p-3 bg-white/90 backdrop-blur-md rounded-2xl shadow-soft hover:bg-white hover:scale-110 transition-all duration-300"
                                                 onClick={(e) => {
                                                       e.preventDefault();
                                                       e.stopPropagation();
                                                       saveRecipeToUser();
                                                 }}
                                           >
-                                                <Share className="w-5 h-5 text-[#018558]" />
+                                                <Share className="w-5 h-5 text-primary-600" />
                                           </button>
                                     </div>
 
                                     {/* Time Badge */}
                                     <div
-                                          className="absolute z-50 bottom-3 right-3 px-3 py-1.5 bg-[#018558] text-white rounded-full text-sm font-medium shadow-md"
+                                          className="absolute z-30 bottom-4 right-4 px-4 py-2 bg-gradient-to-r from-secondary-500 to-secondary-600 text-white rounded-2xl text-sm font-bold shadow-soft backdrop-blur-sm"
                                           dir={isArabic ? "rtl" : "ltr"}
                                     >
-                                          ⏳ {recipe?.time} {isArabic ? "مين" : "Min"}
+                                          <div className="flex items-center space-x-1">
+                                                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                </svg>
+                                                <span>{recipe?.time} {isArabic ? "د" : "min"}</span>
+                                          </div>
                                     </div>
 
                                     {/* Bottom Author Section */}
-                                    <div className="absolute bottom-0 left-0 w-full flex items-center justify-between px-4 py-3 bg-gradient-to-t from-[#018558]/90 to-transparent">
-                                          <div className="flex items-center gap-3">
+                                    <div className="absolute bottom-0 left-0 w-full flex items-center justify-between px-6 py-4 bg-gradient-to-t from-black/80 to-transparent">
+                                          <div className="flex items-center gap-4">
                                                 {createdBy?.image?.url ? (
                                                       createdBy.image.url === "default.webp" ? (
-                                                            <div className="w-9 h-9 rounded-full bg-white flex items-center justify-center text-[#018558] font-bold uppercase border-2 border-white">
-                                                                  {createdBy?.firstName?.[0]}
+                                                            <div className="w-10 h-10 rounded-full bg-gradient-to-r from-primary-500 to-primary-600 flex items-center justify-center text-white font-bold uppercase border-2 border-white shadow-soft">
+                                                                  <span className="font-display">{createdBy?.firstName?.[0]}</span>
                                                             </div>
                                                       ) : (
                                                             <img
                                                                   src={createdBy.image.url}
                                                                   alt={createdBy.image.key}
-                                                                  className="w-9 h-9 rounded-full object-cover border-2 border-white"
+                                                                  className="w-10 h-10 rounded-full object-cover border-2 border-white shadow-soft"
                                                             />
                                                       )
                                                 ) : recipe?.metadata?.imported ? (
                                                       <Link
                                                             to={recipe.metadata.originalUrl}
-                                                            className="px-3 py-1.5 bg-white/90 backdrop-blur-sm rounded-full text-sm font-medium text-[#018558] hover:bg-white transition-colors"
+                                                            className="px-4 py-2 bg-white/90 backdrop-blur-md rounded-2xl text-sm font-semibold text-primary-600 hover:bg-white transition-all duration-200 shadow-soft"
                                                             target="_blank"
                                                             rel="noreferrer"
                                                       >
@@ -156,15 +162,15 @@ const RecipeCard = ({ recipe }) => {
                                                 ) : null}
 
                                                 {!recipe?.metadata?.imported && (
-                                                      <div className="text-white">
+                                                      <div className="text-white drop-shadow-lg">
                                                             <p
-                                                                  className="text-sm font-medium leading-tight"
+                                                                  className="text-sm font-semibold leading-tight"
                                                                   dir={isArabic ? "rtl" : "ltr"}
                                                             >
                                                                   {createdBy?.firstName
                                                                         ? isArabic
                                                                               ? createdBy.firstName?.ar
-                                                                              : createdBy.firstName?.en 
+                                                                              : createdBy.firstName?.en
                                                                         : ""}
                                                                   {" "}
                                                                   {createdBy?.lastName
@@ -174,9 +180,8 @@ const RecipeCard = ({ recipe }) => {
                                                                         : ""}
                                                             </p>
 
-
-                                                            <p className="text-xs opacity-90">
-                                                                  Recipe Creator
+                                                            <p className="text-xs opacity-80 font-medium">
+                                                                  {isArabic ? "منشئ الوصفة" : "Recipe Creator"}
                                                             </p>
                                                       </div>
                                                 )}
@@ -185,25 +190,31 @@ const RecipeCard = ({ recipe }) => {
                               </div>
 
                               {/* Title Section */}
-                              <div className="p-4 bg-gradient-to-b from-white to-[#018558]/5">
-                                    <h3 className="font-semibold text-gray-800 whitespace-nowrap overflow-hidden text-ellipsis group-hover:text-[#018558] transition-colors mb-2" dir={isArabic ? "rtl" : "ltr"}>
+                              <div className="p-6 bg-gradient-to-b from-white to-primary-50/30">
+                                    <h3 className="font-bold text-lg text-neutral-800 group-hover:text-primary-600 transition-colors mb-3 line-clamp-2" dir={isArabic ? "rtl" : "ltr"}>
                                           {
                                                 isArabic ? recipe?.title?.ar : recipe?.title?.en
                                           }
                                     </h3>
-                                    <div className="flex items-center gap-2 text-sm text-[#018558]">
+                                    <div className="flex items-center gap-3 text-sm">
                                           <span
-                                                className="bg-[#018558]/10 px-2 py-1 rounded-md"
+                                                className="bg-gradient-to-r from-primary-100 to-primary-200 text-primary-700 px-3 py-1.5 rounded-xl font-medium flex items-center space-x-1"
                                                 dir={isArabic ? "rtl" : "ltr"}
                                           >
-                                                🥄 {recipe?.servings} {isArabic ? "الحصص" : "Servings"}
+                                                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                                                </svg>
+                                                <span>{recipe?.servings} {isArabic ? "حصص" : "servings"}</span>
                                           </span>
-                                          <span className="text-gray-400">•</span>
+                                          <span className="text-neutral-300">•</span>
                                           <span
-                                                className="bg-[#018558]/10 px-2 py-1 rounded-md"
+                                                className="bg-gradient-to-r from-accent-100 to-accent-200 text-accent-700 px-3 py-1.5 rounded-xl font-medium flex items-center space-x-1"
                                                 dir={isArabic ? "rtl" : "ltr"}
                                           >
-                                                🍴 {recipe?.ingredients?.length} {isArabic ? "المكونات" : "ingredients"}
+                                                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                                                </svg>
+                                                <span>{recipe?.ingredients?.length} {isArabic ? "مكونات" : "ingredients"}</span>
                                           </span>
                                     </div>
                               </div>

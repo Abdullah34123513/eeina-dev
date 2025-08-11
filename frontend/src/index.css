@@ -1,8 +1,95 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@200..700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Modern CSS Variables */
+:root {
+      --primary-gradient: linear-gradient(135deg, #018558 0%, #016a46 100%);
+      --secondary-gradient: linear-gradient(135deg, #EF8F21 0%, #ca8a04 100%);
+      --accent-gradient: linear-gradient(135deg, #7bc144 0%, #65a30d 100%);
+      --glass-bg: rgba(255, 255, 255, 0.25);
+      --glass-border: rgba(255, 255, 255, 0.18);
+}
+
+/* Base Styles */
+* {
+      scroll-behavior: smooth;
+}
+
+body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+      min-height: 100vh;
+}
+
+/* Custom Components */
+@layer components {
+      .btn-primary {
+            @apply bg-gradient-to-r from-primary-500 to-primary-600 text-white font-medium px-6 py-3 rounded-xl shadow-soft hover:shadow-medium transition-all duration-300 hover:scale-105 active:scale-95;
+      }
+      
+      .btn-secondary {
+            @apply bg-gradient-to-r from-secondary-500 to-secondary-600 text-white font-medium px-6 py-3 rounded-xl shadow-soft hover:shadow-medium transition-all duration-300 hover:scale-105 active:scale-95;
+      }
+      
+      .btn-outline {
+            @apply border-2 border-primary-500 text-primary-500 font-medium px-6 py-3 rounded-xl hover:bg-primary-500 hover:text-white transition-all duration-300;
+      }
+      
+      .card {
+            @apply bg-white rounded-2xl shadow-soft hover:shadow-medium transition-all duration-300 border border-neutral-100;
+      }
+      
+      .card-hover {
+            @apply hover:scale-105 hover:-translate-y-1;
+      }
+      
+      .glass-card {
+            @apply backdrop-blur-md bg-white/25 border border-white/18 rounded-2xl shadow-large;
+      }
+      
+      .input-modern {
+            @apply w-full px-4 py-3 rounded-xl border border-neutral-200 focus:border-primary-500 focus:ring-4 focus:ring-primary-100 transition-all duration-200 bg-white/50 backdrop-blur-sm;
+      }
+      
+      .gradient-text {
+            @apply bg-gradient-to-r from-primary-600 to-primary-500 bg-clip-text text-transparent;
+      }
+      
+      .section-padding {
+            @apply px-4 sm:px-6 lg:px-8 py-12 lg:py-16;
+      }
+      
+      .container-modern {
+            @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+      }
+}
+
+/* Animations */
+@layer utilities {
+      .animate-float {
+            animation: float 6s ease-in-out infinite;
+      }
+      
+      .animate-pulse-slow {
+            animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      }
+      
+      .animate-bounce-gentle {
+            animation: bounceGentle 2s ease-in-out infinite;
+      }
+}
+
+@keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+}
+
+@keyframes bounceGentle {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+}
 /* 
       Custom Font (Nirwana)
 */
@@ -13,15 +100,12 @@
       font-style: normal;
 }
 
-
-
 /* 
       Right-to-Left (RTL) Support
 */
 [dir="rtl"] {
       direction: rtl;
 }
-
 
 /* Hide Google Translate Banner and extra iframes */
 .goog-te-banner-frame.skiptranslate,
@@ -37,18 +121,21 @@ body {
       top: 0 !important;
 }
 
-
-.custom-scroll{
+.custom-scroll {
       /* For Webkit Browsers */
       &::-webkit-scrollbar {
-            width: 8px;
+            width: 6px;
       }
       &::-webkit-scrollbar-thumb {
-            background-color: #162033;
-            border-radius: 4px;
+            background: linear-gradient(135deg, #018558, #016a46);
+            border-radius: 6px;
       }
 
       &::-webkit-scrollbar-track {
             background-color: transparent;
+      }
+      
+      &::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(135deg, #016a46, #015a3a);
       }
 }

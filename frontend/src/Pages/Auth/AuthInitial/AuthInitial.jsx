@@ -18,25 +18,35 @@ const AuthInitial = ({ setModalType, closeModal, fadeVariants }) => {
                   exit="exit"
                   variants={fadeVariants}
                   transition={{ duration: 0.3 }}
-                  className="p-6 bg-white rounded-lg shadow-lg max-w-[400px]"
+                  className="p-8 bg-white/95 backdrop-blur-md rounded-3xl shadow-large max-w-md border border-white/20"
             >
-                  <div className="flex justify-end items-center mb-4">
-                        <X className="cursor-pointer" onClick={closeModal} />
+                  <div className="flex justify-end items-center mb-6">
+                        <button 
+                              onClick={closeModal}
+                              className="p-2 rounded-xl hover:bg-neutral-100 transition-colors"
+                        >
+                              <X className="w-5 h-5 text-neutral-500" />
+                        </button>
                   </div>
-                  <h2 className="text-2xl font-semibold mb-8">Welcome!</h2>
-                  <div className="w-full flex flex-col space-y-4">
-                        <div className="w-full flex flex-col space-y-4">
-                              <div className="space-y-4">
-                                    <div className="w-full p-[2px] bg-gradient-to-r from-[#4285F4] via-[#DB4437] to-[#F4B400] rounded-full mb-2">
+                  
+                  <div className="text-center mb-8">
+                        <h2 className="text-3xl font-bold gradient-text font-display mb-2">Welcome to EEINA!</h2>
+                        <p className="text-neutral-600">Join our community of food lovers</p>
+                  </div>
+                  
+                  <div className="w-full flex flex-col space-y-6">
+                        <div className="w-full flex flex-col space-y-6">
+                              <div className="space-y-6">
+                                    <div className="w-full p-[2px] bg-gradient-to-r from-[#4285F4] via-[#DB4437] to-[#F4B400] rounded-2xl">
                                           <button
                                                 onClick={handleGoogleLogin} // Start Google OAuth via Passport
-                                                className="w-full text-black px-4 py-2 rounded-full bg-white flex items-center justify-center relative"
+                                                className="w-full text-neutral-800 px-6 py-4 rounded-2xl bg-white flex items-center justify-center relative hover:bg-neutral-50 transition-colors font-medium"
                                           >
-                                                <span className="absolute left-4">
+                                                <span className="absolute left-6">
                                                       <img
                                                             src="/google.png"
                                                             alt="google_icon"
-                                                            className="w-9 aspect-square"
+                                                            className="w-6 h-6"
                                                       />
                                                 </span>
                                                 <span>
@@ -45,53 +55,47 @@ const AuthInitial = ({ setModalType, closeModal, fadeVariants }) => {
                                           </button>
                                     </div>
 
-                                    <div className="flex items-center justify-center space-x-4 px-4">
-                                          <div className="w-full h-[1px] border-b border-gray-400" />
-                                          <span className="text-gray-500">
+                                    <div className="flex items-center justify-center space-x-4">
+                                          <div className="flex-1 h-px bg-gradient-to-r from-transparent via-neutral-300 to-transparent" />
+                                          <span className="text-neutral-500 font-medium px-4">
                                                 or
                                           </span>
-                                          <div className="w-full h-[1px] border-b border-gray-400" />
+                                          <div className="flex-1 h-px bg-gradient-to-r from-transparent via-neutral-300 to-transparent" />
                                     </div>
+                                    
                                     <button
                                           onClick={() => setModalType("login")}
-                                          className="w-full text-black px-4 py-2 rounded-full border border-gray-400 duration-300 hover:border-gray-900 mb-2 flex items-center justify-center relative"
+                                          className="w-full text-neutral-800 px-6 py-4 rounded-2xl border-2 border-neutral-200 hover:border-primary-300 hover:bg-primary-50 transition-all duration-300 flex items-center justify-center relative font-medium"
                                     >
-                                          <span className="absolute left-4">
-                                                <Mail />
+                                          <span className="absolute left-6">
+                                                <Mail className="w-5 h-5 text-primary-600" />
                                           </span>
                                           <span>Continue with Email</span>
                                     </button>
                               </div>
-                              <p className="text-center text-gray-500 cursor-pointer">
+                              
+                              <p className="text-center text-neutral-600">
                                     Don&apos;t have an account?{" "}
                                     <span
                                           onClick={() => setModalType("signup")}
-                                          className="text-black font-semibold"
+                                          className="text-primary-600 hover:text-primary-700 font-semibold cursor-pointer transition-colors"
                                     >
                                           Sign up
                                     </span>
                               </p>
                         </div>
-                        <div className="text-gray-500 text-center max-w-[80%] mx-auto">
-                              <p>
+                        
+                        <div className="text-neutral-500 text-center text-xs leading-relaxed pt-6 border-t border-neutral-200">
+                              <p className="max-w-sm mx-auto">
                                     By using EEINA Food you agree to our{" "}
-                                    <Link to="#" className="text-primary">
+                                    <Link to="#" className="text-primary-600 hover:text-primary-700 transition-colors">
                                           Terms
                                     </Link>{" "}
                                     and{" "}
-                                    <Link to="#" className="text-primary">
+                                    <Link to="#" className="text-primary-600 hover:text-primary-700 transition-colors">
                                           Privacy Policy
                                     </Link>
-                                    . This site is protected by reCAPTCHA and
-                                    the Google{" "}
-                                    <Link to="#" className="text-primary">
-                                          Privacy Policy
-                                    </Link>{" "}
-                                    and{" "}
-                                    <Link to="#" className="text-primary">
-                                          Terms of Service
-                                    </Link>{" "}
-                                    apply.
+                                    .
                               </p>
                         </div>
                   </div>

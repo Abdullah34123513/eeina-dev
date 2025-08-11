@@ -54,14 +54,14 @@ const DiscoverRecipes = () => {
       }, []);
 
       return (
-            <div>
-                  <div className="w-full flex flex-col items-center justify-center space-y-4">
+            <div className="section-padding bg-gradient-to-b from-white to-primary-50/30">
+                  <div className="w-full flex flex-col items-center justify-center space-y-6 mb-12">
                         <div className="flex justify-between items-center">
                               <Link
                                     to={`/search`}
                               >
                                     <h2
-                                          className="text-gray-900 text-4xl font-oswald font-normal underline"
+                                          className="text-4xl lg:text-5xl font-bold font-display gradient-text hover:scale-105 transition-transform duration-300"
                                           dir={isArabic ? "rtl" : "ltr"}
                                     >
                                           {exploreDiscoverTitle}
@@ -70,11 +70,18 @@ const DiscoverRecipes = () => {
                         </div>
                         <div>
                               <p
-                                    className="text-gray-600 text-md hidden md:block"
+                                    className="text-lg text-neutral-600 max-w-3xl mx-auto leading-relaxed text-center"
                                     dir={isArabic ? "rtl" : "ltr"}
                               >
                                     {exploreSub}
                               </p>
+                        </div>
+                        
+                        {/* Decorative Elements */}
+                        <div className="flex items-center space-x-4">
+                              <div className="w-2 h-2 bg-primary-400 rounded-full animate-bounce"></div>
+                              <div className="w-2 h-2 bg-accent-400 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
+                              <div className="w-2 h-2 bg-secondary-400 rounded-full animate-bounce" style={{ animationDelay: '0.4s' }}></div>
                         </div>
                   </div>
 
@@ -83,31 +90,25 @@ const DiscoverRecipes = () => {
                         next={fetchRecipes}
                         hasMore={hasMoreRecipes}
                         loader={
-                              <div className="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 my-8">
-                                    <div className="relative w-full min-h-[250px] bg-gray-300 rounded-2xl overflow-hidden animate-pulse">
-                                          <div className="absolute top-2 left-2">
-                                                <div className="w-6 h-6 bg-gray-400 rounded-full"></div>
+                              <div className="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 my-12">
+                                    {Array.from({ length: 8 }).map((_, i) => (
+                                          <div key={i} className="relative w-full min-h-[280px] bg-gradient-to-br from-neutral-200 to-neutral-300 rounded-2xl overflow-hidden animate-pulse">
+                                                <div className="absolute top-4 left-4">
+                                                      <div className="w-8 h-8 bg-neutral-400 rounded-full"></div>
+                                                </div>
+                                                <div className="absolute top-4 right-4">
+                                                      <div className="w-8 h-8 bg-neutral-400 rounded-full"></div>
+                                                </div>
+                                                <div className="absolute bottom-4 left-4 right-4">
+                                                      <div className="h-6 bg-neutral-400 rounded-lg mb-2"></div>
+                                                      <div className="h-4 bg-neutral-400 rounded w-3/4"></div>
+                                                </div>
                                           </div>
-                                          <div className="absolute top-2 right-2">
-                                                <div className="w-6 h-6 bg-gray-400 rounded-full"></div>
-                                          </div>
-                                          <div className="absolute bottom-2 left-2">
-                                                <div className="w-16 h-4 bg-gray-400 rounded"></div>
-                                          </div>
-                                          <div className="absolute bottom-2 right-2">
-                                                <div className="w-6 h-6 bg-gray-400 rounded-full"></div>
-                                          </div>
-                                    </div>
-                                    <div className="mt-2">
-                                          <div className="h-6 bg-gray-300 rounded w-3/4 animate-pulse"></div>
-                                    </div>
-                                    <div className="mt-2">
-                                          <div className="h-4 bg-gray-300 rounded w-1/2 animate-pulse"></div>
-                                    </div>
+                                    ))}
                               </div>
                         }
                         // Optionally, you can adjust the scrollThreshold if needed.
-                        scrollThreshold="300px"
+                        scrollThreshold="200px"
                   >
                         <DiscoverCardContainer recipes={recipes} />
                   </InfiniteScroll>

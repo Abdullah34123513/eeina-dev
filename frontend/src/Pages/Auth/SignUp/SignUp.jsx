@@ -78,10 +78,10 @@ const SignUp = ({
                   exit="exit"
                   variants={fadeVariants}
                   transition={{ duration: 0.3 }}
-                  className="p-6 bg-white rounded-lg shadow-lg w-full max-w-sm"
+                  className="p-8 bg-white/95 backdrop-blur-md rounded-3xl shadow-large w-full max-w-md border border-white/20"
             >
                   <form
-                        className="w-full p-4 rounded-xl space-y-8"
+                        className="w-full space-y-8"
                         onSubmit={handleSubmit(onSubmit)}
                   >
                         <div className="relative flex items-center justify-center">
@@ -91,21 +91,21 @@ const SignUp = ({
                                           onClick={() =>
                                                 setModalType("initial")
                                           }
-                                          className="cursor-pointer"
+                                          className="cursor-pointer p-2 rounded-xl hover:bg-neutral-100 transition-colors"
                                     />
                               </span>
-                              <h1 className="text-3xl font-bold text-center text-gray-800">
+                              <h1 className="text-3xl font-bold text-center gradient-text font-display">
                                     Signup
                               </h1>
                         </div>
 
-                        <div className="space-y-6">
-                              <div className="flex space-x-4">
+                        <div className="space-y-8">
+                              <div className="grid grid-cols-2 gap-4">
                                     {/* First Name Field */}
                                     <div className="relative group">
                                           <label
                                                 htmlFor="firstName"
-                                                className=" text-sm text-gray-600 mb-1"
+                                                className="block text-sm font-medium text-neutral-700 mb-2"
                                           >
                                                 First Name
                                           </label>
@@ -116,15 +116,10 @@ const SignUp = ({
                                                 {...register("firstName", {
                                                       required: "This field is required",
                                                 })}
-                                                className="w-full border-b border-gray-300 py-2 px-4 focus:outline-none focus:border-transparent"
+                                                className="input-modern"
                                           />
-                                          {/* Animated blue border */}
-                                          <span
-                                                className="absolute bottom-0 left-0 h-[2px] w-full bg-gradient-to-b from-[rgb(50,180,81)] via-[rgb(76,183,72)] to-[rgb(123,193,68)]  transform scale-x-0 origin-center transition-transform duration-300 group-focus-within:scale-x-100"
-                                                aria-hidden="true"
-                                          ></span>
                                           {errors.firstName && (
-                                                <span className="text-danger text-xs">
+                                                <span className="text-error text-sm mt-1 block">
                                                       {errors.firstName.message}
                                                 </span>
                                           )}
@@ -134,7 +129,7 @@ const SignUp = ({
                                     <div className="relative group">
                                           <label
                                                 htmlFor="lastName"
-                                                className=" text-sm text-gray-600 mb-1"
+                                                className="block text-sm font-medium text-neutral-700 mb-2"
                                           >
                                                 Last Name
                                           </label>
@@ -145,15 +140,10 @@ const SignUp = ({
                                                 {...register("lastName", {
                                                       required: "This field is required",
                                                 })}
-                                                className="w-full border-b border-gray-300 py-2 px-4 focus:outline-none focus:border-transparent"
+                                                className="input-modern"
                                           />
-                                          {/* Animated blue border */}
-                                          <span
-                                                className="absolute bottom-0 left-0 h-[2px] w-full bg-gradient-to-b from-[rgb(50,180,81)] via-[rgb(76,183,72)] to-[rgb(123,193,68)]  transform scale-x-0 origin-center transition-transform duration-300 group-focus-within:scale-x-100"
-                                                aria-hidden="true"
-                                          ></span>
                                           {errors.lastName && (
-                                                <span className="text-danger text-xs">
+                                                <span className="text-error text-sm mt-1 block">
                                                       {errors.lastName.message}
                                                 </span>
                                           )}
@@ -164,7 +154,7 @@ const SignUp = ({
                               <div className="relative group">
                                     <label
                                           htmlFor="email"
-                                          className="block text-sm text-gray-600 mb-1"
+                                          className="block text-sm font-medium text-neutral-700 mb-2"
                                     >
                                           Email
                                     </label>
@@ -175,15 +165,10 @@ const SignUp = ({
                                           {...register("email", {
                                                 required: "This field is required",
                                           })}
-                                          className="w-full border-b border-gray-300 py-2 px-4 focus:outline-none focus:border-transparent"
+                                          className="input-modern"
                                     />
-                                    {/* Animated blue border */}
-                                    <span
-                                          className="absolute bottom-0 left-0 h-[2px] w-full bg-gradient-to-b from-[rgb(50,180,81)] via-[rgb(76,183,72)] to-[rgb(123,193,68)]  transform scale-x-0 origin-center transition-transform duration-300 group-focus-within:scale-x-100"
-                                          aria-hidden="true"
-                                    ></span>
                                     {errors.email && (
-                                          <span className="text-danger text-xs">
+                                          <span className="text-error text-sm mt-1 block">
                                                 {errors.email.message}
                                           </span>
                                     )}
@@ -193,45 +178,42 @@ const SignUp = ({
                               <div className="relative group">
                                     <label
                                           htmlFor="password"
-                                          className="block text-sm text-gray-600 mb-1"
+                                          className="block text-sm font-medium text-neutral-700 mb-2"
                                     >
                                           Password
                                     </label>
-                                    <input
-                                          id="password"
-                                          type={
-                                                showPassword
-                                                      ? "text"
-                                                      : "password"
-                                          }
-                                          autoComplete="off"
-                                          {...register("password", {
-                                                required: "This field is required",
-                                          })}
-                                          className="w-full border-b border-gray-300 py-2 px-4 pr-10 focus:outline-none focus:border-transparent"
-                                    />
-                                    {/* Toggle Button for showing/hiding the password */}
-                                    <button
-                                          type="button"
-                                          onClick={() =>
-                                                setShowPassword((prev) => !prev)
-                                          }
-                                          className="absolute inset-y-0 right-0 flex items-center pr-3"
-                                          tabIndex={-1}
-                                    >
-                                          {showPassword ? (
-                                                <Eye className="text-gray-500" />
-                                          ) : (
-                                                <EyeClosed className="text-gray-500" />
-                                          )}
-                                    </button>
-                                    {/* Animated blue border */}
-                                    <span
-                                          className="absolute bottom-0 left-0 h-[2px] w-full bg-gradient-to-b from-[rgb(50,180,81)] via-[rgb(76,183,72)] to-[rgb(123,193,68)] transform scale-x-0 origin-center transition-transform duration-300 group-focus-within:scale-x-100"
-                                          aria-hidden="true"
-                                    ></span>
+                                    <div className="relative">
+                                          <input
+                                                id="password"
+                                                type={
+                                                      showPassword
+                                                            ? "text"
+                                                            : "password"
+                                                }
+                                                autoComplete="off"
+                                                {...register("password", {
+                                                      required: "This field is required",
+                                                })}
+                                                className="input-modern pr-12"
+                                          />
+                                          {/* Toggle Button for showing/hiding the password */}
+                                          <button
+                                                type="button"
+                                                onClick={() =>
+                                                      setShowPassword((prev) => !prev)
+                                                }
+                                                className="absolute right-4 top-1/2 transform -translate-y-1/2 p-1 rounded-lg hover:bg-neutral-100 transition-colors"
+                                                tabIndex={-1}
+                                          >
+                                                {showPassword ? (
+                                                      <Eye className="text-neutral-500 w-5 h-5" />
+                                                ) : (
+                                                      <EyeClosed className="text-neutral-500 w-5 h-5" />
+                                                )}
+                                          </button>
+                                    </div>
                                     {errors.password && (
-                                          <span className="text-danger text-xs">
+                                          <span className="text-error text-sm mt-1 block">
                                                 {errors.password.message}
                                           </span>
                                     )}
@@ -241,7 +223,7 @@ const SignUp = ({
                               <div className="relative group">
                                     <label
                                           htmlFor="confirmPassword"
-                                          className="block text-sm text-gray-600 mb-1"
+                                          className="block text-sm font-medium text-neutral-700 mb-2"
                                     >
                                           Confirm Password
                                     </label>
@@ -257,47 +239,48 @@ const SignUp = ({
                                                 required: "This field is required",
                                                 validate: validatePasswordsMatch,
                                           })}
-                                          className={`w-full border-b py-2 px-4 focus:outline-none focus:border-transparent ${errors.confirmPassword ||
-                                                isPasswordMismatch
-                                                ? "border-detext-danger"
-                                                : "border-gray-300"
+                                          className={`input-modern ${errors.confirmPassword || isPasswordMismatch
+                                                ? "border-error focus:border-error focus:ring-error/20"
+                                                : ""
                                                 }`}
                                     />
-                                    {/* Animated blue border */}
-                                    <span
-                                          className="absolute bottom-0 left-0 h-[2px] w-full bg-gradient-to-b from-[rgb(50,180,81)] via-[rgb(76,183,72)] to-[rgb(123,193,68)]  transform scale-x-0 origin-center transition-transform duration-300 group-focus-within:scale-x-100"
-                                          aria-hidden="true"
-                                    ></span>
                                     {errors.confirmPassword && (
-                                          <span className="text-danger text-xs">
+                                          <span className="text-error text-sm mt-1 block">
                                                 {errors.confirmPassword.message}
                                           </span>
                                     )}
                               </div>
+                              
                               {errors.root && (
-                                    <p className="text-red-500">
-                                          {errors.root.message}
-                                    </p>
+                                    <div className="bg-error/10 border border-error/20 rounded-xl p-4">
+                                          <p className="text-error text-sm font-medium">{errors.root.message}</p>
+                                    </div>
                               )}
+                              
                               <button
                                     type="submit"
                                     disabled={loading}
-                                    className="bg-gradient-to-r from-[rgb(50,180,81)] via-[rgb(76,183,72)] to-[rgb(123,193,68)] 
-                                                bg-[200%_auto] transition-all duration-500 bg-right
-                                                hover:bg-left text-white px-5 py-2 rounded-md mt-4 lg:mt-0 w-full"
+                                    className="btn-primary w-full text-lg font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
                               >
-                                    Sign Up
+                                    {loading ? (
+                                          <div className="flex items-center justify-center space-x-2">
+                                                <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
+                                                <span>Creating account...</span>
+                                          </div>
+                                    ) : (
+                                          "Sign Up"
+                                    )}
                               </button>
 
                               <div>
-                                    <p className="text-center text-sm text-gray-600 flex items-center space-x-1 justify-center">
+                                    <p className="text-center text-sm text-neutral-600 flex items-center space-x-1 justify-center">
                                           <span>Already have an account?</span>
                                           <div
                                                 onClick={() =>
                                                       setModalType("login")
                                                 }
                                                 disabled={loading}
-                                                className="text-secondary hover:underline cursor-pointer"
+                                                className="text-primary-600 hover:text-primary-700 font-medium cursor-pointer transition-colors"
                                           >
                                                 Login now
                                           </div>
