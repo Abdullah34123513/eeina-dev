@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "../../assets/EEINA_final_141123/Logo/Green_BG/logo2.png";
 import { useLang } from "../../context/LangContext";
+import { ArrowRight } from "lucide-react";
 
 const Footer = () => {
       const { isArabic } = useLang();
